@@ -1,3 +1,7 @@
+.blue-color {
+  color:blue;
+  }
+
 h2 {
   --global-font-size: 30px;
   --font-color: #e8e9ed;
@@ -12,6 +16,20 @@ header {
   --global-font-size: 30px;
   --font-color: #e8e9ed;
 }
+
+.fe-persistent-header {
+    position: relative;
+    z-index: 2;
+}
+.print-pdf .fe-persistent-header { display: none; }
+@media print { .fe-persistent-header { display: none; } }
+
+.fe-persistent-header a {
+    color: #fff;
+    float: right;
+    margin: 30px 60px 20px;
+}
+.fe-persistent-header a:nth-child(2) { float: left; }
 
 .dark-mode {
   --global-font-size: 30px;
