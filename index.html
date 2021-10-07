@@ -13,7 +13,7 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
+                <section >
                     <img alt ="XCITE title slide" src="./XCITE_title_slide.svg">
                 </section>
                 <!-- <section class="title-slide" data-background-color="#222225" data-background-image="stars.svg">                    <h2>Connecting the Stars - A Journey to Tech</h2>                    <h2>Kim Fitter</h2>                    <i class="fa fa-twitter blue-color fa-lg"></i>                    <a href="https://twitter.com/Kim_Fitter">@Kim_Fitter</a>                    <p></p>                    <h3>27 October 2021</h3>                    </section> -->
@@ -100,20 +100,30 @@
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </section>
-                <section data-background-color="#222225">
+                <section data-background-color="#222225"> 
                     <header>
-                        <h3 class="terminal-prompt"> Analysing the star properties data using Vega-Lite.js (first draft needs prettifying)
+                        <h3 class="terminal-prompt"> Analysing the star  data using Vega-Lite.js
                         </h3>
                         <p></p>
                     </header>
-                    <br>
-                    <img alt="Magnitude dot plot" src="/mag_dot_plot.png">
-                    <br>
-                    <h3>The dimmer the star, the higher the magnitude number</h3>
-                    <img alt="BV index dot plot" src="/bv_dot_plot.png">
-                    <h3>- Hot stars (low B-V) are blue/purple and cool stars (high B-V) are red with those white/orange stars in betwee</h3>
-                    <br>
-                    <br>
+                    <div class="r-stack">
+                        <img class="fragment" alt="Magnitude dot plot" data-src="/mag_dot_plot.png">
+                    </div>
+                    <h3 class="fragment">The dimmer the star, the higher the magnitude number</h3>
+                </section>
+                <section data-background-color="#222225"> 
+                    <header>
+                        <h3 class="terminal-prompt"> Analysing the star  data using Vega-Lite.js
+                        </h3>
+                        <p></p>
+                    </header>
+
+                    <div class="r-stack">
+                        <img class="fragment" alt="BV index dot plot" src="/bv_dot_plot.png">   
+                    </div>                     
+                    <h3 class="fragment"> Hot stars (low B-V) are blue/purple and cool stars (high B-V) are red with those white/orange stars in between</h3>
+                
+  
                 </section>
                 <section data-background-color="#222225">
                     <header>
@@ -140,15 +150,16 @@ new Runtime().module(define, name => {
                     <div class="container">
                         <header>
                             <h3 class="terminal-prompt">   
-                                <a>What have I learnt?</a>    
+                                <a>Summary - What have I learnt?</a>    
                             </h3>
                         </header>
                         <p></p>
-                        <p class="fragment">Be curious</p>
+                        <p class="fragment">Be curious when learning to code</p>
                         <p class="fragment">Try new tools, but don't hold on too tight</p>
-                        <p class="fragment">Look at your data</p>
-                        <p class="fragment">Connect the data </p> 
-                        <p class="fragment">....but realise you might not actually understand your data</p>
+                        <p class="fragment">Connect with your data ....</p>
+                        <p class="fragment">.....challenge your assumptions about the data</p>
+                        <p class="fragment">.....analyse your data</p>
+                        <p class="fragment">.....define the meta data</p>
                         <p class="fragment">Connect with others and share your knowledge</p>  
                     </div>
                 </body>
