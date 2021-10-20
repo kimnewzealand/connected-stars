@@ -26,10 +26,11 @@
                             </h3>
                         </header>
                         <p></p>
-                        <p class="fragment">Self taught and worked as a Data Scientist</p>
+                        <p class="fragment">Project Manager and Test Manager in previous life</p>
+                        <p class="fragment">Self taught in R and worked as a Data Scientist</p>
                         <p class="fragment">Community organiser: R meetup and satRday conference</p>
                         <p class="fragment">Enspiral Dev Academy</p>
-                        <p class="fragment">Engineer and Developer Evangelist at Xero in the Ecosystem</p>
+                        <p class="fragment">Full Stack Engineer in the apps Ecosystem in Xero (Sept 2020+)</p>
                         <p class="fragment">Community organiser: Xero Talks meetups</p>  
                     </div>
                 </body>
@@ -37,11 +38,14 @@
                 <section data-background-color="#222225">
                     <body class="terminal">
                     <h3 class="terminal-prompt">About this talk</h3>
+                    <p class="fragment">Using data visualisation examples of star maps to talk about my journey to tech</p> 
+                    <p class="fragment">Share some learnings</p> 
+                    <p class="fragment">Finally, how I made these slides</p> 
                     </body>
                 </section>
                 <section data-background-color="#222225">
                     <header>
-                        <h3 class="terminal-prompt"> This story starts in New Zealand
+                        <h3 class="terminal-prompt"> This story about starts in New Zealand
                         </h3>
                         <p></p>
                     </header>
@@ -60,7 +64,7 @@
                 </section>
                 <section data-background-color="#222225">
                     <header>
-                        <h3 class="terminal-prompt">                      Trip to St John's Observatory
+                        <h3 class="terminal-prompt">                      On a trip to St John's Observatory in January, 2019
                         </h3>
                         <p></p>
                     </header>
@@ -68,7 +72,7 @@
                 </section>
                 <section data-background-color="#222225">
                     <header>
-                        <h3 class="terminal-prompt">                    I created a map of
+                        <h3 class="terminal-prompt">                    I then used open source data to create a map of
                         </h3>
                         <p></p>
                     </header>
@@ -102,22 +106,48 @@
                 </section>
                 <section data-background-color="#222225"> 
                     <header>
-                        <h3 class="terminal-prompt"> Analysing the star  data using Vega-Lite.js
+                        <h3 class="terminal-prompt"> In 2021 I returned to the stars dataset with Vega-Lite and D3
+                        </h3>
+                        <p></p>
+                    </header>
+                </section>
+                <section data-background-color="#222225">
+                    <header>
+                        <h3 class="terminal-prompt"> Created a D3.js map using magnitude
+                        </h3>
+                        <p></p>
+                    </header>
+                    <div id="observablehq-sparkly_stars-3947be4d"></div>
+                    <p>
+                        <a href="https://observablehq.com/@kimnewzealand/celestial-maps">Sparkly map in D3.js using D3-Celestial data (by Kim Fitter)</a>
+                    </p>
+                    
+                    <script type="module">
+                    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                    import define from "https://api.observablehq.com/@kimnewzealand/celestial-maps.js?v=3";
+                    new Runtime().module(define, name => {
+                      if (name === "sparkly_stars") return new Inspector(document.querySelector("#observablehq-sparkly_stars-3947be4d"));
+                    });
+                    </script>
+                </section>
+ 
+                <section data-background-color="#222225"> 
+                    <header>
+                        <h3 class="terminal-prompt"> Analysing the magnitude using Vega-Lite.js
                         </h3>
                         <p></p>
                     </header>
                     <div class="r-stack">
                         <img class="fragment" alt="Magnitude dot plot" data-src="/mag_dot_plot.png">
                     </div>
-                    <h3 class="fragment">The dimmer the star, the higher the magnitude number</h3>
+                    <h3 class="fragment">The dimmer the star, the higher the apparent magnitude number</h3>
                 </section>
                 <section data-background-color="#222225"> 
                     <header>
-                        <h3 class="terminal-prompt"> Analysing the star  data using Vega-Lite.js
+                        <h3 class="terminal-prompt"> Analysing the colour using Vega-Lite.js
                         </h3>
                         <p></p>
                     </header>
-
                     <div class="r-stack">
                         <img class="fragment" alt="BV index dot plot" src="/bv_dot_plot.png">   
                     </div>                     
@@ -125,38 +155,18 @@
                 
   
                 </section>
-                <section data-background-color="#222225">
-                    <header>
-                        <h3 class="terminal-prompt"> Created a D3.js colour map
-                        </h3>
-                        <p></p>
-                    </header>
-                    <div id="observablehq-star_globe-e8bbbfec"></div>
-                    <br>
-                    <p>
-                        <a href="https://observablehq.com/@kimnewzealand/celestial-maps">Map made in D3.js using D3-Celestial data (by Kim Fitter)</a>
-                    </p>
-
-                    <script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@kimnewzealand/celestial-maps@765.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "star_globe") return new Inspector(document.querySelector("#observablehq-star_globe-e8bbbfec"));
-});
-                    </script>
-                </section>
                 <section data-background-color="white">
                     <body class="terminal">
                     <div class="container">
                         <header>
                             <h3 class="terminal-prompt">   
-                                <a>Summary - What have I learnt?</a>    
+                                <a>Summary - What have I learnt from visualising star data?</a>    
                             </h3>
                         </header>
                         <p></p>
-                        <p class="fragment">Be curious when learning to code</p>
+                        <p class="fragment">Be curious about the data when learning to code</p>
                         <p class="fragment">Try new tools, but don't hold on too tight</p>
-                        <p class="fragment">Connect with your data ....</p>
+                        <p class="fragment">The data is more important.....</p>
                         <p class="fragment">.....challenge your assumptions about the data</p>
                         <p class="fragment">.....analyse your data</p>
                         <p class="fragment">.....define the meta data</p>
@@ -189,8 +199,6 @@ new Runtime().module(define, name => {
                 </section>
                 <section data-background-color="#222225">
                     <h2>References</h2>
-
-
                     <a href="https://kimnewzealand.github.io/2019/02/21/celestial-maps/">How to set up local HTML presentations using Reveal.js engine bundled by Vite.js</a>
                     <br>
                     <br>
@@ -202,9 +210,16 @@ new Runtime().module(define, name => {
                     <br>
                     <a href="https://observablehq.com/@kimnewzealand/celestial-maps">Observable JavaScript data analysis and maps - Kim Fitter</a>
                     <br>
+              
+                </section>
+                <section data-background-color="#222225">
+                    <h2>Thanks</h2>
+                    <a href="https://connected-stars.netlify.app/"> https://connected-stars.netlify.app/</a>
                     <br>
-                    <a href="https://connected-stars.netlify.app/">Link to this presentation https://connected-stars.netlify.app/</a>
                     <br>
+                    <br>
+                    <i class="fa fa-twitter blue-color fa-lg"></i>
+                    <a href="https://twitter.com/Kim_Fitter">@Kim_Fitter</a>  
                     <br>
                 </section>
             </div>
@@ -213,3 +228,4 @@ new Runtime().module(define, name => {
  
     </body>
 </html>
+
